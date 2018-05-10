@@ -1,0 +1,519 @@
+/* 全局style */
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-size: 13px;
+}
+@media (max-width: 1024px){
+    body {
+        width: 1024px;
+    }
+}
+.clear:after{
+    clear: both;
+    content: '';
+    display: block;
+    height: 0px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    color: #d5d5d5;
+    cursor: pointer;
+}
+a:hover{
+    color:#fff;
+}
+/* nav */
+.navigation{
+    height: 28px;
+    /* color: #d5d5d5; */
+    background-color: #545652;
+    min-width: 950px;
+}
+.navigation li{
+    line-height: 28px;
+    font-size: 12px;
+}
+.navigation .navLeft li{
+    float: left;
+}
+.navigation .navRight li{
+    float: right;
+    height: 28px;
+}
+.navigation a{
+    display: inline-block;
+    padding: 0 12px;
+    height: 28px;
+}
+.navigation .loadCliek{
+    position: relative;
+    overflow: hidden;
+}
+.navigation .loadCliek:hover{
+    overflow: visible;
+}
+.navigation .load{
+    position: absolute;
+    background-color: #fff;
+    top: 28px;
+    left: -66%;
+    padding: 10px 20px 30px;
+    width: 211px;
+    border-top: none;
+    color: #111;
+    font-size: 15px;
+    line-height: 1.62;
+    font-weight: bold;
+    text-align: center;
+    z-index: 20;
+}
+.navigation .load p:nth-of-type(1){
+    padding-top: 170px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 400;
+    background: url(http://img3.doubanio.com/dae/accounts/resources/321e246/shire/assets/nav_doubanapp_6.png) no-repeat center;
+}
+.navigation .load p:nth-of-type(2){
+    padding-top: 160px;
+    margin-top: 30px;
+    font-size: 0;
+    background: url(http://img3.doubanio.com/dae/accounts/resources/321e246/shire/assets/nav_doubanapp_6_qrcode.png) no-repeat center;
+}
+.navigation .load div a{
+    color: #37a;
+    font-size: 12px;    
+    font-weight: normal;
+}
+
+/* navMusic */
+.navMusic{
+    width: 100%;
+    background: #f0f3ef;
+    overflow: hidden;
+    min-width: 1040px;
+    margin-bottom: 40px;
+}
+.navMusic .autoM{
+    width: 1040px;
+    margin: 0 auto; 
+    padding: 12px;
+    padding-top: 0px;
+}
+.navMusic .search {
+    height: 56px;
+    margin-top: 22px;
+    padding-left: 145px;
+    background: url(http://img3.doubanio.com/dae/accounts/resources/19507ad/music/assets/lg_music_a12_2.png?s=1) no-repeat ;  
+}
+.navMusic .search .inputF{
+    float: left;
+    width: 470px;
+    height: 34px;
+    text-align: center;
+    margin-right: -6px;
+    cursor: text;
+    background-image: url(http://img3.doubanio.com/dae/accounts/resources/19507ad/music/assets/nav_mu_bg.png?s=1)
+}
+.navMusic .search .inputF input:nth-of-type(1){
+    background: #fff;
+    width: 96%;
+    margin: 0;
+    text-align: left;
+    height: 30px;
+    padding-left: 10px;
+    outline: none;
+    border: 0px;
+}
+.navMusic .search .inputL{
+    position: relative;
+    left: -1px;
+    width: 37px;
+    height: 34px; 
+    overflow: hidden;
+    background: url(http://img3.doubanio.com/dae/accounts/resources/19507ad/music/assets/nav_mu_bg.png?s=1) no-repeat 0 -40px;
+
+}
+.navMusic .search .inputL input:nth-of-type(1){
+    width: 0%;
+    height: 0%;
+    font-size: 0;
+    margin-left: -5px;
+    padding: 35px 0 0 0;
+    overflow: hidden;
+    color: transparent;
+    cursor: pointer;
+}
+.navMusic .navlist{
+    border-top: 1px solid #e5ebe4;
+}
+.navMusic .navlist ul{
+    margin: 9px 0;
+    font-size: 14px;
+    overflow: hidden;
+}
+.navMusic .navlist ul li{
+    float: left;
+    margin-right: 25px;
+
+}
+.navMusic .navlist a{
+    color: #555d53;  
+}
+.navMusic .navlist a:hover{
+    color: #fff;
+    background-color: #555d53;
+}
+
+/* search list */
+
+.searchlist{
+    display: none;
+    width: 468px;
+    margin-left: -5px;
+    margin-top: 2px;
+    background: #fff;
+    border: 1px solid #ddd;
+    position: absolute;
+    z-index: 99;
+}
+.searchlist li{
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+.searchlist a{
+    color: #999;
+    display: block;
+    overflow: hidden;
+    padding: 6px;
+    zoom: 1;
+}
+.searchlist a:hover{
+    background: #f9f9f9;
+    color: #999;
+}
+.searchlist a img{
+    float: left;
+    margin-right: 8px;
+    margin-top: 3px;
+    width: 40px;
+}
+.searchlist a div em{
+    font-style: normal;
+    color: #369;
+}
+
+/* wrapper */
+.wrapper{
+    width: 1040px;
+    margin: 0 auto;
+}
+@media (max-width: 1024px){
+    .wrapper {
+        width: 1000px;
+    } 
+}
+.wrapper .content{
+    /* width: 100%; */
+    /* border: 1px solid black; */
+  
+}
+
+/* wrapper left style*/
+.wrapper .content .left{
+    float: left;
+    width: 675px;
+    /* height: 50px; */
+    /* border: 1px solid black; */
+}
+
+/* left sildeshow */
+.wrapper .content .left .slideshow{
+    margin-bottom: 30px;    
+}
+.wrapper .content .left .slideshow ul{
+    
+}
+.wrapper .content .left .slideshow li{
+    width:675px;
+}
+.wrapper .content .left .slideshow img{
+    width: 100%;
+    height: 250px;
+}
+/* left weekmusicianslist */
+.wrapper .content .left .weekmusicianslist .head{
+    border-bottom: 2px solid #02A682;
+}
+.wrapper .content .left .weekmusicianslist .head li{
+    display: inline-block;
+    cursor: pointer;
+}
+.wrapper .content .left .weekmusicianslist .head li:nth-of-type(1){
+    font-size: 17px;
+    color: #222;
+    line-height: 30px;
+    margin: 0px;
+}
+.wrapper .content .left .weekmusicianslist .head li:nth-of-type(2){
+    font-size: 14px;
+    line-height: 30px;
+    color: #999;
+}
+.wrapper .content .left .weekmusicianslist .artists{
+    text-align: center;
+    background: #F5F7F8;
+    padding: 15px 0 0 30px;
+}
+.wrapper .left .weekmusicianslist .artists li{
+    background: transparent;
+    border: 0;
+    width: 130px;
+    float: left;
+    margin-right: 30px;
+}
+.wrapper .left .weekmusicianslist .artists .cover{
+    height: 125px;
+    width: 125px;
+    overflow: hidden;
+    background: rgba(85,83,83,0.2);
+    background: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 5px solid #FFFFFF;
+    box-shadow: 0 0 0 1px #DFDCDC;
+    margin-bottom: 10px;
+}
+.wrapper .left .weekmusicianslist .artists li .cover a{
+    width: 125px;
+    height: 125px;
+    display: block;
+    position: relative;
+}
+.wrapper .left .weekmusicianslist .artists .cover .bg{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center top;
+    background-image: url(https://img1.doubanio.com/view/site/large/public/6a2319e9fb0dcb8.jpg);
+}
+.wrapper .left .weekmusicianslist .artists .cover .floatbg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    zoom: 1;
+    border: none;
+}
+.wrapper .left .weekmusicianslist .artists .cover .floatbg .hoverlay{
+    display: none;
+}
+.wrapper .left .weekmusicianslist .artists .cover .floatbg:hover{
+    background: #333 !important;
+    opacity: .85;
+}
+.wrapper .left .weekmusicianslist .artists .cover .floatbg:hover .hoverlay{
+    display: block;
+}
+.wrapper .left .weekmusicianslist .artists .cover .floatbg .hoverlay{
+    padding: 14px;
+}
+.wrapper .left .weekmusicianslist .artists .cover .floatbg>span{
+    right: 10px;
+    bottom: 10px;
+    top: auto;
+    left: auto;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: -8px 0 0 -8px;
+    background: #222 !important;
+    opacity: .95;
+    border-radius: 100%;
+    text-align: center;
+    zoom: 1;
+}
+.wrapper .left .weekmusicianslist .artists .cover .floatbg i{
+    display: block;
+    margin: 5px 0 0 7px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    line-height: 0px;
+    border-color: transparent transparent transparent #ffffff;
+    font-style: normal;
+    font-weight: normal;
+}
+.wrapper .left .weekmusicianslist .artists .cover .floatbg:hover span{
+    background: #fff !important;
+}
+.wrapper .left .weekmusicianslist .artists .cover .floatbg:hover i{
+    border-color: transparent transparent transparent #000;
+}
+.wrapper .left .weekmusicianslist .artists .cover .floatbg p{
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #FFF;
+    overflow: hidden;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.wrapper .left .weekmusicianslist .artists li>a{
+    display: inline-block;
+    background: url(https://img3.doubanio.com/f/music/d61397f8efe08f2988bd187f2085461bcfc5ce7a/pics/music/home/fleece_small.png) no-repeat;
+    padding-left: 20px;
+    font-size: 15px;
+    margin-top: 5px;
+    color: #138A64;
+}
+.wrapper .left .weekmusicianslist .artists li>a:hover{
+    color: #fff;
+    background-color: #138A64;
+}
+.wrapper .left .weekmusicianslist .artists p{
+    margin: 1px 0 18px 0;
+    color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* wrapper right style */
+.wrapper .content .right{
+    float: right;
+    width: 300px;
+    /* border: 1px solid black; */
+}
+.wrapper .right .imgwrap img{
+    width: 100%;
+}
+.wrapper .right .imgwrap{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.wrapper .right .join{
+    margin-bottom: 30px;
+}
+.wrapper .right .join .joinblock{
+    float: left;
+    width: 98px;
+    margin-right: 2px;
+    height: 57px;
+    background-color: #F5F7F8;
+    text-align: center;
+}
+.wrapper .right .join .joinblock a{
+    font-size: 17px;
+    font-weight: bold;
+    color: #138A64;
+}
+.wrapper .right .join .joinblock a:hover{
+    color: #fff;
+    background-color: #138A64;
+}
+.wrapper .right .join .joinblock p{
+    margin: 0px;
+    font-size: 15px;
+    color: #666;
+}
+.wrapper .right .join>a{
+    background-color: #139D72;
+    height: 38px;
+    color: #FFF;
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    line-height: 38px;
+    margin-top: 3px;
+    border: 1px solid #138A64;
+    border-radius: 3px;
+}
+.wrapper .right .join>a:hover{
+    opacity: 0.8;
+}
+.wrapper .right .hotClass{
+
+}
+.wrapper .right .hotClass .hot_header{
+    font-size: 15px;
+    color: #222;
+    float: left;
+}
+.wrapper .right .hotClass .hot_more{
+    float: right;
+    width: 30px;
+}
+.wrapper .right .hotClass .hot_more a{
+    font-size: 13px;
+    color: #999;
+    line-height: 22px;
+}
+.wrapper .right .hotClass .hot_more a:hover{
+    color: #FFF;
+    background-color: #999;
+}
+.wrapper .right .hotClass .hot_list li{
+    float: left;
+    width: 149px;
+    border-top: 1px solid #F8F6F6;
+    border-bottom: 1px solid #F8F6F6;
+    border-right: 1px solid #F8F6F6;
+}
+.wrapper .right .hotClass .hot_list a{
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    color: #138A64;
+    font-size: 15px;
+    padding-left: 6px;
+}
+.wrapper .right .hotClass .hot_list a:hover{
+    background-color: #F5F7F8;
+}
+
+
+/* wrapper footer */
+.wrapper .footer{
+    color: #999;
+    padding: 6px 0;
+    margin-top: 40px;
+    overflow: hidden;
+    zoom: 1;
+    border-top: 1px dashed #ddd;
+}
+.wrapper .footer .fleft{
+    float: left;
+}
+.wrapper .footer .fright{
+    float: right;
+}
+.wrapper .footer .fright a{
+    color: #37a;
+}
+.wrapper .footer .fright a:hover{
+    background-color: #37a;
+    color: #fff;
+}
